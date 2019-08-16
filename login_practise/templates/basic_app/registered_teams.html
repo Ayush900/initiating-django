@@ -1,0 +1,12 @@
+{% extends 'basic_app/base.html' %}
+{% block body_block %}
+<div class="jumbotron">
+  <h1>All the registered teams are given as:</h1>
+  <ol>
+    {% for item in registered_teams %}
+    <li> {% item.team_name %} </li>
+  </ol>
+
+</div>
+
+{% endblock %}

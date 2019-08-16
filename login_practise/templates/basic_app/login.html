@@ -1,0 +1,17 @@
+{% extends 'basic_app/base.html' %}
+{% block body_block %}
+<div class="jumbotron">
+  <h1>Registered teams login here to view the registered teams and the schedule!</h1>
+  <form action="{% url 'basic_app:login' %}" method="post">
+    {% csrf_token %}
+
+    <label for="team_name">Team Name:</label>
+    <input type="text" name="team_name" placeholder="Enter the team name:">
+    <label for="password">password:</label>
+    <input type="password" name="password">
+    <input type="submit"value="Register">   
+  </form>
+
+
+</div>
+{% endblock %}
