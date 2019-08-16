@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Football Form! </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1> For the enthusiastic football fans! </h1>
+        <h2> Fill out this football form </h2>
+        <form method="post">
+          {{form.as_p}}
+          {% csrf_token %}
+          <input type="submit"class ="btn btn-primary" value="submit">
+
+        </form>
+      </div>
+
+    </div>
+      </body>
+</html>
